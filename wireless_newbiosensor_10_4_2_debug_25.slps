@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="wireless_newbiosensor_10_4_2_debug_25">
+    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:3.2.9._-1351908336"/>
+    <properties key="universalConfig.generationDirectory" value=""/>
+    <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>
+    <properties key="projectCommon.partId" value="mcu.arm.efr32.bg22.bgm220sc22wga"/>
+    <properties key="projectCommon.toolchainId" value="com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:10.2.1.20201103"/>
+    <properties key="universalConfig.projectTypeIds" value="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType"/>
+    <properties key="projectCommon.importModeId" value="COPY"/>
+    <properties key="universalConfig.relativeWorkspacePath" value="..\wireless_newbiosensor_10_4_2_debug_24.slcw"/>
+    <properties key="universalConfig.incrementalOverwriteConfigs" value="false"/>
+    <properties key="universalConfig.previousSdkId" value="com.silabs.sdk.stack.super:3.1.2._-1351908335"/>
+  </descriptors>
+</model:MDescriptors>
