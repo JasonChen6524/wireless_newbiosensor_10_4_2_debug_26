@@ -1,6 +1,6 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: wireless_newbiosensor_10_4_2_debug_25
-label: wireless_newbiosensor_10_4_2_debug_25
+project_name: wireless_newbiosensor_10_4_2_debug_26
+label: wireless_newbiosensor_10_4_2_debug_26
 description: |
   This example demonstrates the bare minimum needed for a Bluetooth C application that allows Over-the-Air Device Firmware Upgrading (OTA DFU). The application starts advertising after boot and restarts advertising after a connection is closed.
 category: Bluetooth Examples
@@ -21,33 +21,33 @@ sdk: {id: gecko_sdk, version: 3.2.9}
 toolchain_settings: []
 component:
 - {id: BGM220SC22WGA}
-- {id: bluetooth_feature_gatt_server}
-- {id: iostream_swo}
-- {id: mpu}
-- {id: mbedtls_cipher_cbc}
-- {id: gatt_configuration}
-- instance: [MPC0, MPC1]
-  id: pwm
-- {id: bluetooth_stack}
-- {id: bluetooth_on_demand_start}
-- {id: gpiointerrupt}
-- {id: bluetooth_feature_power_control}
-- {id: emlib_rmu}
+- {id: app_assert}
 - {id: app_log}
+- {id: bluetooth_feature_advertiser}
+- {id: bluetooth_feature_connection}
+- {id: bluetooth_feature_gatt_server}
+- {id: bluetooth_feature_power_control}
+- {id: bluetooth_feature_system}
+- {id: bluetooth_on_demand_start}
+- {id: bluetooth_stack}
+- {id: bootloader_interface}
+- {id: component_catalog}
 - instance: [EN5V, G_INT1, MFIO, bio_reset]
   id: emlib_gpio_simple_init
-- {id: bluetooth_feature_connection}
-- {id: bluetooth_feature_advertiser}
-- {id: mbedtls_random}
+- {id: emlib_rmu}
 - {id: emlib_wdog}
-- {id: bluetooth_feature_system}
+- {id: gatt_configuration}
+- {id: gpiointerrupt}
 - instance: [sensor]
   id: i2cspm
-- {id: printf}
-- {id: component_catalog}
+- {id: iostream_swo}
+- {id: mbedtls_cipher_cbc}
+- {id: mbedtls_random}
+- {id: mpu}
 - {id: ota_dfu}
-- {id: bootloader_interface}
-- {id: app_assert}
+- {id: printf}
+- instance: [MPC0, MPC1]
+  id: pwm
 other_file:
 - {path: create_bl_files.bat}
 - {path: create_bl_files.sh}
